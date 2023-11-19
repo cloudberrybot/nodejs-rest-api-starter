@@ -4,8 +4,8 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "clean": "rm -rf dist",
-    "build": "npm run clean && tsc --project tsconfig.json && cp package.json package-lock.json dist && cp -R src/generated dist",
+    "clean": "rm -rf ../../dist",
+    "build": "npm run clean && tsc --project tsconfig.json && cp package.json package-lock.json ../../dist && cp -R src/generated ../../dist",
     "start": "node ./dist/app.js",
     "studio": "npx prisma studio",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts",
