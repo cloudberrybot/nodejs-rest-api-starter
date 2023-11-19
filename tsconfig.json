@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "target": "ES6",
+    "module": "CommonJS",
+    "outDir": "dist/",
+    "rootDirs": ["./src", "prisma"],
+    "strict": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+  },
+  "files": ["./src/app.ts"],
+  "include": ["./src"],
+  "exclude": ["node_modules", "commitlint.config.js"]
+}
