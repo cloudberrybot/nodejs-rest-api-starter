@@ -131,3 +131,7 @@ dist
 
 .zip
 .DS_Store
+
+!src/*
+src/package-lock.json
+src/node_modules
