@@ -15,6 +15,10 @@ app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 /* Routes */
 app.use('/api/notes', noteRoutes)
 
+app.get('/', function (req, res) {
+  res.send('Notes API running on AWS Beanstalk!')
+})
+
 app.listen(port, () => {
   console.log(`Server running on port ${port}`)
 })
