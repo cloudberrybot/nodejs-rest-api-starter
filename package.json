@@ -6,7 +6,7 @@
   "scripts": {
     "clean": "rm -rf ../../dist",
     "build": "npm run clean && tsc --project tsconfig.json && cp package.json package-lock.json ../../dist && cp -R src/generated ../../dist && rsync -av --exclude='*.ts' prisma ../../dist",
-    "start": "node ./src/app.js",
+    "start": " ./node_modules/prisma/build/index.js generate && node ./src/app.js",
     "studio": "npx prisma studio",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts",
     "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
